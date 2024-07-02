@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="mocha" class="mocha"></div>
+        <script>
+            // the mocha test style to use - we use BDD - Behviour Driven Development
+            mocha.setup('bdd');
+            //ensure the assert function is available
+            var assert = chai.assert;
+        </script>
+
+        <!-- the function to be tested -->
+        <script src="mocha-intro/greet.js" charset="utf-8"></script>
+        <script src="mocha-intro/bellville.js" charset="utf-8"></script>
+        <script src="mocha-intro/regcheck.js" charset="utf-8"></script>
+        <script src="mocha-intro/countregnumber.js" charset="utf-8"></script>
+        <script src="mocha-intro/isweekday.js" charset="utf-8"></script>
+        <script src="mocha-intro/yearsago.js" charset="utf-8"></script>
+        <script src="mocha-intro/countallpaarl.js" charset="utf-8"></script>
+        <script src="mocha-intro/countallfromtown.js" charset="utf-8"></script>
+        <script src="mocha-intro/totalphonebill.js" charset="utf-8"></script>
+        <script src="mocha-intro/finditemsover20.js" charset="utf-8"></script>
+        <script src="mocha-intro/finditemsover.js" charset="utf-8"></script>
+        <script src="mocha-intro/mostprofitabledepartment.js" charset="utf-8"></script>
+        <!-- followed by the tests -->
+        <script src="test/greet.tests.js" charset="utf-8"></script>
+        <script src="test/bellville.tests.js" charset="utf-8"></script>
+        <script src="test/regcheck.tests.js" charset="utf-8"></script>
+        <script src="test/countregnumber.tests.js" charset="utf-8"></script>
+        <script src="test/isweekday.tests.js" charset="utf-8"></script>
+        <script src="test/yearsago.tests.js" charset="utf-8"></script>
+        <script src="test/countallpaarl.tests.js" charset="utf-8"></script>
+        <script src="test/countallfromtown.tests.js" charset="utf-8"></script>
+        <script src="test/totalphonebill.tests.js" charset="utf-8"></script>
+        <script src="test/finditemsover20.tests.js" charset="utf-8"></script>
+        <script src="test/finditemsover.tests.js" charset="utf-8"></script>
+        <script src="test/mostprofitabledepartment.tests.js" charset="utf-8"></script>
+        <script>
+            // configure and run mocha
+            mocha.checkLeaks();
+            mocha.run();
+        </script>
+
+    </div>    
+                     
+</body>
+
+</html>

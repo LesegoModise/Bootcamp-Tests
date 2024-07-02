@@ -1,0 +1,27 @@
+body {
+   background-color: #CFE49E;
+}
+
+.container {
+    color: beige;
+    background-image: url(unit_testing.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.788); /* Adjust the last value to change the darkness */
+    z-index: 1;
+}
+
+#mocha {
+    position: relative;
+    z-index: 2;
+}
