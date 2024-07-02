@@ -11,8 +11,13 @@ describe('Test my countRegNumber function' , function(){
     it('it should return the number of registration numbers from the string given' , function(){
         var regCount = countRegNumber('CA 182736,CY 523519,CJ 812328')
         assert.equal(regCount, 3);
-
+    });
+    it('it should return the number of registration numbers from the string given' , function(){
         var regCount = countRegNumber('CA 182736')
         assert.equal(regCount, 1);
+    });
+    it('it should return the number of registration numbers from the string given' , function(){
+        var regCount = countRegNumber('CA 42665, AA 12 RT GP')
+        assert.equal(regCount, 2);
     });
 });

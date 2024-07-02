@@ -12,9 +12,13 @@ var results3 = [
 ];
 
 describe('Test my findItemsOver20 function' , function(){
-    it('it should return pears - 37 and bananas - 27 for item list 1, and apples - 40; bananas - 23 and apples - 37 for item list 3. There is no items over 20 in item list 2.' , function(){
+    it('it should return pears - 37 and bananas - 27 for item list 1.' , function(){
         assert.deepEqual(results, findItemsOver20(itemList));
+    });
+    it('There is no items over 20 in item list 2.' , function(){
         assert.deepEqual(results2, findItemsOver20(itemList2));
+    });
+    it('it should return apples - 40; bananas - 23 and apples - 37 for item list 3.' , function(){
         assert.deepEqual(results3, findItemsOver20(itemList3));
     });
 });

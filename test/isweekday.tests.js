@@ -6,14 +6,22 @@
 // console.log(isWeekday('Friday'));
 // console.log(isWeekday('Saturday'));
 
+// assert.equal(isWeekday('Saturday'), false);
+// assert.equal(isWeekday('Sunday'), false);
+// assert.equal(isWeekday('Monday'), true);
+// assert.equal(isWeekday('Tuesday'), true);
+// assert.equal(isWeekday('Wednesday'), true);
+// assert.equal(isWeekday('Thursday'), true);
+// assert.equal(isWeekday('Friday'), true);
+
 describe('Test my isWeekday function' , function(){
     it('it should return "true" if it is a day of the week and "false" if it is not' , function(){
         assert.equal(isWeekday('Saturday'), false);
-        assert.equal(isWeekday('Sunday'), false);
+    });
+    it('it should return "true" if it is a day of the week and "false" if it is not' , function(){
         assert.equal(isWeekday('Monday'), true);
+    });
+    it('it should return "true" if it is a day of the week and "false" if it is not' , function(){
         assert.equal(isWeekday('Tuesday'), true);
-        assert.equal(isWeekday('Wednesday'), true);
-        assert.equal(isWeekday('Thursday'), true);
-        assert.equal(isWeekday('Friday'), true);
     });
 });
